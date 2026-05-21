@@ -1,21 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Explorer Index</title>
   <meta charset="UTF-8">
-</head>
-<body>
-  <h1>Explorer Index</h1>
-  <p>A structured knowledge system of the physical world.</p>
+  <title>Explorer Index</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
 
-  <h2>Categories</h2>
-  <ul>
-    <li>Geology</li>
-    <li>Meteorology</li>
-    <li>Biology</li>
-    <li>Physics</li>
-    <li>Geography</li>
-  </ul>
+    header {
+      padding: 40px;
+      text-align: center;
+      background: #111827;
+      border-bottom: 1px solid #334155;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    p {
+      color: #94a3b8;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.2s;
+      cursor: pointer;
+      border: 1px solid #334155;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      border-color: #60a5fa;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Explorer Index</h1>
+  <p>A structured knowledge system of the physical world</p>
+</header>
+
+<div class="container">
+
+  <a href="geology.html">
+    <div class="card">
+      <h2>Geology</h2>
+      <p>Rocks, layers, minerals, Earth structure</p>
+    </div>
+  </a>
+
+  <a href="meteorology.html">
+    <div class="card">
+      <h2>Meteorology</h2>
+      <p>Weather systems, clouds, atmosphere</p>
+    </div>
+  </a>
+
+  <a href="biology.html">
+    <div class="card">
+      <h2>Biology</h2>
+      <p>Animals, plants, ecosystems</p>
+    </div>
+  </a>
+
+  <a href="physics.html">
+    <div class="card">
+      <h2>Physics</h2>
+      <p>Forces, motion, energy, systems</p>
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  Explorer Index v0.1 — Built by Jouna
+</footer>
 
 </body>
 </html>
